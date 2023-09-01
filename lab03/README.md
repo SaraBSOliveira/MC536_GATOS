@@ -25,3 +25,4 @@ CONTEM(_Codigo_, _Nome_, qtdPresente)
   Codigo: chave estrangeira -> INGREDIENTE
   Nome: chave estrangeira -> NUTRIENTE
 ~~~
+A
