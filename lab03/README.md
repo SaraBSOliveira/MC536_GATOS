@@ -5,6 +5,10 @@
 * Luiz Fernando Lima Leite - 248405
 * Sara Beatriz da Silva Oliveira - 231288
 
+## Modelo Conceitual ER Revisado
+<img src="images/Diagrama ER lab03.png" width="700px" height="auto">
+
+
 ## Modelo Relacional
 ~~~
 ALUNO(_RA_, Nome)
