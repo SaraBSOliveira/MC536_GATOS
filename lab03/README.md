@@ -9,14 +9,17 @@
 ~~~
 ALUNO(_RA_, Nome)
 PORCAO(_ID_, Nome, Preco)
-PEDE(_RA_, _ID_, Data)
+PEDE(_RA_, _ID_, _Data_)
   RA: chave estrangeira -> ALUNO
   ID: chave estrangeira -> PORCAO
 CARDAPIO(_Data_, _Refeicao_)
 INCLUI(_ID_, _Data_, _Refeicao_)
   ID: chave estrangeira -> PORCAO
   Data, Refeicao: chave estrangeira -> CARDAPIO
-INGREDIENTE(_Codigo_, Nome, Superior)
+INGREDIENTE(_Codigo_, Nome)
+COMPÕE(_Composto_, _Componente_)
+  Composto: chave estrangeira -> INGREDIENTE
+  Componente: chave estrangeira -> INGREDIENTE
 LEVA(_ID_, _Codigo_)
   ID: chave estrangeira -> PORCAO
   Codigo: chave estrangeira -> INGREDIENTE
@@ -25,4 +28,3 @@ CONTEM(_Codigo_, _Nome_, qtdPresente)
   Codigo: chave estrangeira -> INGREDIENTE
   Nome: chave estrangeira -> NUTRIENTE
 ~~~
-A
