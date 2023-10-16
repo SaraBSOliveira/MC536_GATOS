@@ -14,3 +14,11 @@ CREATE VIEW Resultado AS
 SELECT M.FCID_CODE, M.FCID_DESC, M.CGN, M.CG_SUBGROUP, M.POPULARITY, M.INTAKE_SUM, M.INTAKE_AVG, M.INTAKE_BW_AVG, N.RECIPES
 FROM Metricas M, NumReceitas N
 WHERE M.FCID_CODE = N.FCID_CODE
+
+QUESTAO 2
+É possível medir a correlação entre duas variáveis usando o coeficiente de Pearson.
+Podemos então comparar INTAKE_SUM com POPULARITY
+(-1 para relação linear perfeita inversa e 1 para relação linear perfeita)
+SELECT (count(*) * sum(POPULARITY * INTAKE_SUM) - sum(POPULARITY) * sum(INTAKE_SUM)) / (sqrt(count(*) * sum(POPULARITY * POPULARITY) - sum(POPULARITY) * sum(POPULARITY)) * sqrt(count(*) * sum(INTAKE_SUM * INTAKE_SUM) - sum(INTAKE_SUM) * sum(INTAKE_SUM))) AS CORR
+FROM Resultado
+O resultado dá cerca de 0.31, indicando que existe apenas uma leve correlação entre as variáveis.
