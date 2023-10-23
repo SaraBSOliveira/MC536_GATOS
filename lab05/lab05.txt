@@ -22,3 +22,12 @@ Podemos então comparar INTAKE_SUM com POPULARITY
 SELECT (count(*) * sum(POPULARITY * INTAKE_SUM) - sum(POPULARITY) * sum(INTAKE_SUM)) / (sqrt(count(*) * sum(POPULARITY * POPULARITY) - sum(POPULARITY) * sum(POPULARITY)) * sqrt(count(*) * sum(INTAKE_SUM * INTAKE_SUM) - sum(INTAKE_SUM) * sum(INTAKE_SUM))) AS CORR
 FROM Resultado
 O resultado dá cerca de 0.31, indicando que existe apenas uma leve correlação entre as variáveis.
+
+QUESTAO 3
+Para criar grupos de consumidores de acordo com o perfil, podemos criar uma view para agrupar os registros da tabela Intake
+que pertencem a mesma pessoa (agrupando por SEQN), contendo também o Crop_Group predominante entre os consumos dessa pessoa.
+Em seguida, agrupamos todos os registros dessa tabela de acordo com o Crop_Group, criando assim grupos de consumidores de acordo 
+com o grupo de alimentos que eles mais consomem.
+
+QUESTAO 4
+--
