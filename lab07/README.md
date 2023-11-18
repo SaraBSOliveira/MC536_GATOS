@@ -11,8 +11,10 @@
 
 ## Perguntas
 * Quais alimentos são mais consumidos juntos?
-* Quais as comidas mais populares?
+* Quais os ingredientes mais populares?
 * Quais os grupos de alimentos mais populares?
-* Qual a média de consumo de cada alimento?
-* Qual versão de cada receita é a mais consumida?
+* Qual o grau de similaridade (quantos ingredientes comuns) entre duas receitas
+
+
+
 
