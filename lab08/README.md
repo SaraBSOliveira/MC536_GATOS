@@ -25,5 +25,5 @@ A partir disso, podemos organizar uma comunidade de Receitas na qual a Receita A
    * Podemos realizar uma análise dos grafos utilizando o conceito de comunidade. Essa análise seria feita considerando as arestas entre um ingrediente e outro, representando a frequência com que eles aparecem juntos em receitas. Assim, poderíamos agrupar os ingredientes em comunidades, e identificar quais estão frequentemente conectados.
 
 ### Pergunta/Análise 4
-* Quais são os ingredientes mais populares?
-   * É possível verificar quais os ingredientes mais populares pelo grau de centralidade dos ingredientes, o que ajudaria a identificar quais os ingredientes mais conectados (e, portanto, mais populares) entre as pessoas.
+* Quais são os ingredientes mais importantes?
+   * É possível verificar quais os ingredientes mais populares pelo grau de centralidade dos ingredientes, o que ajudaria a identificar quais os ingredientes mais conectados (e, portanto, mais populares) entre as receitas. A análise então considera os nós de maior centralidade como os pontos de vulnerabilidade do grafo, pois sua ausência impede a produção de muitas receitas
