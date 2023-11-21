@@ -68,15 +68,15 @@ Proponha um tipo de análise e escreva uma sentença em Cypher que realize a an�
 
 ### Resolução
 
-Podemos criar uma análise onde relacionamos uma patologia a ser tratada com o efeito colateral do seu tratamento.
+Fazemos uma nova análise dos sintomas de uma doença de forma a englobar todos os efeitos sentidos pelo paciente desde o início da enfermidade até alcançar novamente o estado são. Nessa perspectiva, surpreendentemente, percebemos que patologias podem ganhar "novos" sintomas artificialmente causados pelos remédios que as tratam. Assim, se a doença X causa febre naturalmente e é tratada frequentemente com drogas que têm como efeito colateral dor de cabeça, na prática essa enfermidade causa tanto febre quanto dor de cabeça. Temos, então, uma visão mais abrangente e real de como as doenças afetam as pessoas que aflingem
 
 ~~~cypher
 match (p1:Pathology)<-[t:Treats]-(d:Drug)-[c:Causes]->(p2:Pathology)
 where t.weight > 20 and c.weight > 20
-merge (p1)-[x:CausesWhenTreated]->(p2)
+merge (p1)-[x:ArtificiallyCauses]->(p2)
 on create set x.weight=1
 on match set x.weight=x.weight+1
 
-match (a)-[c:CausesWhenTreated]->(b)
+match (a)-[c:ArtificiallyCauses]->(b)
 return a, c, b
 ~~~
