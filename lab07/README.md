@@ -7,9 +7,9 @@
 
 
 ## Modelo Lógico para Banco de Dados de Grafos
-<img src="images/lab7.png" width="700px" height="auto">
+![Modelo Lógico de Grafos](images/modelo-logico.png)
 
-## Perguntas
+## Perguntas de Pesquisa/Análise
 * Suponha que um indivíduo goste de uma Receita A. Quais outras Receitas podemos recomendar a ele?
 * Dado um ingrediente, quais outros alimentos poderíamos combinar para gerar novas receitas?
 * Quais alimentos são mais consumidos juntos?
