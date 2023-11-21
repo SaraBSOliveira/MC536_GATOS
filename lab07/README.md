@@ -10,11 +10,7 @@
 <img src="images/lab7.png" width="700px" height="auto">
 
 ## Perguntas
+* Suponha que um indivíduo goste de uma Receita A. Quais outras Receitas podemos recomendar a ele?
+* Dado um ingrediente, quais outros alimentos poderíamos combinar para gerar novas receitas?
 * Quais alimentos são mais consumidos juntos?
-* Quais os ingredientes mais populares?
-* Quais os grupos de alimentos mais populares?
-* Qual o grau de similaridade (quantos ingredientes comuns) entre duas receitas
-
-
-
-
+* Quais são os ingredientes mais populares?
